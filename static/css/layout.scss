@@ -1,0 +1,103 @@
+@import "reset.css";
+@import "Util";
+
+body {
+    background-color: #fff;
+    font-family: "Microsoft JhengHei", sans-serif;
+    text-align: justify;
+}
+
+.header {
+    height: 50px;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.paragraph {
+    font-size: 16px;
+    text-indent: 2em;
+    word-break: break-all;
+    margin-top: 20px;
+    line-height: 30px;
+}
+
+.modle-title {
+    font-size: 30px;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.title {
+    letter-spacing: 1px;
+    color: #222;
+    font-weight: 600;
+    font-size: 20px;
+    &:hover {
+        color: #000;
+        text-decoration: underline;
+    }
+}
+.sort {
+    font-size: 16px;
+    color: #222;
+    :hover {
+        color: #000;
+    }
+}
+
+.modle-content {
+    margin: 0 auto;
+    height: 600px;
+    width: 900px;
+    background-color: #fff;
+    ul {
+        box-sizing: border-box;
+        width: 600px;
+        margin-top: 20px;
+        padding: 0 40px;
+    }
+    li {
+        list-style: disc;
+        word-break: break-all;
+        margin-top: 10px;
+    }
+}
+
+.okButton {
+    width: 150px;
+    height: 35px;
+    color: #fff;
+    border: 0;
+    border-radius: 3px;
+    background: #1baaf1;
+    :hover {
+        background: #0981bd;
+    }
+}
+
+.cancelButton {
+    width: 150px;
+    height: 35px;
+    color: #fff;
+    border: 0;
+    border-radius: 3px;
+    background: #000;
+}
+
+.wrap>:first-child {
+    -webkit-animation: showContent 0.2s 1;
+    -o-animation: showContent 0.2s 1;
+    animation: showContent 0.2s 1;
+  min-height:600px;
+}
+
+@keyframes showContent {
+    from {
+        opacity: 0.5
+    }
+    to {
+        opacity: 1
+    }
+}
+
