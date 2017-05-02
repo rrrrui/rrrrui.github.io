@@ -1,25 +1,29 @@
-@import "reset.css";
-@import "Util";
-
+@import "reset.scss";
+@import "util";
 body {
-    background-color: #fff;
-    font-family: "Microsoft JhengHei", sans-serif;
-    text-align: justify;
+  background-color: #fff;
+  font-family: "Microsoft JhengHei", sans-serif;
+  text-align: justify;
+  font-weight:300;
 }
-
 code {
   font-size: 14px;
   max-height: 1000px;
   line-height: 1.5;
   //font-family: Source Code Pro,Consolas,Menlo,Monaco,Courier New,monospace;
-  font-family: "Courier New",sans-serif!important;
+  font-family: "Courier New", sans-serif !important;
 }
-
+data{
+  font-family: "Courier New", sans-serif !important;
+}
+img{
+  box-shadow: 0px 0px 15px 2px #888888;
+}
 .header {
-    height: 50px;
-    width: 100%;
-    background-color: #fff;
-    border-bottom: 1px solid #e8e8e8;
+  height: 50px;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #e8e8e8;
 }
 
 .paragraph {
@@ -27,90 +31,93 @@ code {
   word-break: break-all;
   margin-top: 20px;
   line-height: 1.6;
-  font-family: "微软雅黑","Microsoft JhengHei", sans-serif
+  font-family: "微软雅黑", "Microsoft JhengHei", sans-serif
 
 }
+
 .paragraph p {
-   margin: 10px 0;
- }
+  margin: 10px 0;
+}
 
 .modle-title {
-    font-size: 30px;
-    color: #000;
-    font-weight: 600;
-    margin-bottom: 20px;
+  font-size: 30px;
+  color: #000;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
+
 .title {
-    letter-spacing: 1px;
-    color: #222;
-    font-weight: 600;
-    font-size: 20px;
-    &:hover {
-        color: #000;
-        text-decoration: underline;
-    }
+  letter-spacing: 1px;
+  color: #222;
+  font-weight: 600;
+  font-size: 20px;
+  &:hover {
+    color: #000;
+    text-decoration: underline;
+  }
 }
+
 .sort {
-    font-size: 16px;
-    color: #222;
-    :hover {
-        color: #000;
-    }
+  font-size: 16px;
+  color: #222;
+  :hover {
+    color: #000;
+  }
 }
 
 .modle-content {
-    margin: 0 auto;
-    height: 600px;
-    width: 900px;
-    background-color: #fff;
-    ul {
-        box-sizing: border-box;
-        width: 600px;
-        margin-top: 20px;
-        padding: 0 40px;
-    }
-    li {
-        list-style: disc;
-        word-break: break-all;
-        margin-top: 10px;
-    }
+  margin: 0 auto;
+  height: 600px;
+  width: 900px;
+  background-color: #fff;
+  ul {
+    box-sizing: border-box;
+    width: 600px;
+    margin-top: 20px;
+    padding: 0 40px;
+  }
+  li {
+    list-style: disc;
+    word-break: break-all;
+    margin-top: 10px;
+  }
 }
 
 .okButton {
-    width: 150px;
-    height: 35px;
-    color: #fff;
-    border: 0;
-    border-radius: 3px;
-    background: #1baaf1;
-    :hover {
-        background: #0981bd;
-    }
+  width: 150px;
+  height: 35px;
+  color: #fff;
+  border: 0;
+  border-radius: 3px;
+  background: #1baaf1;
+  :hover {
+    background: #0981bd;
+  }
 }
 
 .cancelButton {
-    width: 150px;
-    height: 35px;
-    color: #fff;
-    border: 0;
-    border-radius: 3px;
-    background: #000;
+  width: 150px;
+  height: 35px;
+  color: #fff;
+  border: 0;
+  border-radius: 3px;
+  background: #000;
 }
 
-.wrap>:first-child {
-    -webkit-animation: showContent 0.2s 1;
-    -o-animation: showContent 0.2s 1;
-    animation: showContent 0.2s 1;
-  min-height:600px;
+.wrap > :first-child {
+  -webkit-animation: showContent 1s 1;
+  -o-animation: showContent 1s 1;
+  animation: showContent 1s 1;
+  min-height: 600px;
 }
 
 @keyframes showContent {
-    from {
-        opacity: 0.5
-    }
-    to {
-        opacity: 1
-    }
+  from {
+    opacity: 0
+  }
+  to {
+    opacity: 1
+  }
 }
 .hljs {
   display: block;
@@ -120,11 +127,13 @@ code {
   background: #f8f8f8;
   -webkit-text-size-adjust: none;
 }
+
 .hljs-comment,
 .diff .hljs-header {
   color: #998;
   font-style: italic;
 }
+
 .hljs-keyword,
 .css .rule .hljs-keyword,
 .hljs-winutils,
@@ -135,27 +144,32 @@ code {
   color: #333;
   font-weight: bold;
 }
+
 .hljs-number,
 .hljs-hexcolor,
 .ruby .hljs-constant {
   color: #008080;
 }
+
 .hljs-string,
 .hljs-tag .hljs-value,
 .hljs-doctag,
 .tex .hljs-formula {
   color: #d14;
 }
+
 .hljs-title,
 .hljs-id,
 .scss .hljs-preprocessor {
   color: #900;
   font-weight: bold;
 }
+
 .hljs-list .hljs-keyword,
 .hljs-subst {
   font-weight: normal;
 }
+
 .hljs-class .hljs-title,
 .hljs-type,
 .vhdl .hljs-literal,
@@ -163,6 +177,7 @@ code {
   color: #458;
   font-weight: bold;
 }
+
 .hljs-tag,
 .hljs-tag .hljs-title,
 .hljs-rule .hljs-property,
@@ -170,15 +185,18 @@ code {
   color: #000080;
   font-weight: normal;
 }
+
 .hljs-attribute,
 .hljs-variable,
 .lisp .hljs-body,
 .hljs-name {
   color: #008080;
 }
+
 .hljs-regexp {
   color: #009926;
 }
+
 .hljs-symbol,
 .ruby .hljs-symbol .hljs-string,
 .lisp .hljs-keyword,
@@ -188,9 +206,11 @@ code {
 .hljs-prompt {
   color: #990073;
 }
+
 .hljs-built_in {
   color: #0086b3;
 }
+
 .hljs-preprocessor,
 .hljs-pragma,
 .hljs-pi,
@@ -200,15 +220,19 @@ code {
   color: #999;
   font-weight: bold;
 }
+
 .hljs-deletion {
   background: #fdd;
 }
+
 .hljs-addition {
   background: #dfd;
 }
+
 .diff .hljs-change {
   background: #0086b3;
 }
+
 .hljs-chunk {
   color: #aaa;
 }
